@@ -1,0 +1,255 @@
+body {
+	font-family: 'Optima' !important;
+}
+.testBorder {
+	border: 2px solid blue;
+}
+
+li {
+	list-style-type: none;
+	font-size: 1.75em;
+}
+
+#too-small-warning {
+	display: none;
+}
+
+.bluify {
+	color: #158CEA;
+	font-weight: bold;
+	letter-spacing: 1px
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.video-bg {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.video-bg video {
+	z-index: -100;
+	width: 100vw;
+	bottom: 0;
+}
+
+.video-bg .logo {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 8%;
+	display: none;
+}
+
+/*TAGLINES*/
+
+.video-bg .tagline {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 35%;
+	text-align: center;
+	display: none;
+}
+
+.video-bg .tagline h1 {
+}
+
+#people {
+	width: 675px;
+	display: inline-block;
+	text-align: left;
+}
+
+/*FINAL TAGLINE*/
+
+.video-bg .finalTagline {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 60%;
+	text-align: center;
+	display: none;
+}
+
+/* SUBSCRIBE FORM */
+/*.video-bg .emailForm {
+	position: absolute;
+	z-index: 100;
+	top: 78%;
+	text-align: center !important;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}*/
+
+.video-bg .table-of-contents {
+	position: absolute;
+	z-index: 100;
+	bottom: 10%;
+	height: 40%;
+	text-align: center !important;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 45%;
+	background: rgba(255, 255, 255, 0.75);
+}
+
+form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+button {
+	margin-top: 10px;
+	opacity: 0.8;
+	background-color: #158CEA !important;
+	border-color: #158CEA !important;
+	width: 50%;
+}
+
+/* PARTNERS */
+.partners {
+	width: 100vw;
+	height: 40vh;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#partner-header {
+	padding-top: 50px;
+	letter-spacing: 1px;
+}
+
+.partners .container-fluid {
+	height: 50%;
+}
+
+.partners .container-fluid img {
+	padding-right: 25px;
+	padding-left: 25px;
+	width: 15%;
+	filter: grayscale(100%);
+}
+
+.partners .container-fluid img:hover {
+	filter: grayscale(0%);
+}
+
+#samsungLogo {
+	width: 20%;
+}
+
+/* MISSION */
+.mission {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* CONTENT */
+.content {
+	height: 85vh;
+	position: relative;
+	z-index: 1;
+	color: black; /*#CACACA;*/
+}
+
+.content .content-bg{
+	background-image: url("../images/gma-child.jpg");
+	position: absolute;
+	opacity: 0.65;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#contentHeader {
+	padding-left: 30px;
+	padding-top: 30px;
+	letter-spacing: 1px;
+	color: black; /*#ECECEC;*/
+}
+
+.content .content-information {
+	position: absolute;
+	z-index: 1;
+	width: 45%;
+	height: 100%;
+	padding-left: 60px;
+	padding-top: 15px;
+	overflow: auto;
+	font-size: 1.1rem;
+}
+
+/* HEART WATCH */
+.heartwatch {
+	height: 80vh;
+	position: relative;
+	z-index: 1;
+}
+
+#heartwatch-header {
+	text-align: center;
+	padding-top: 30px;
+	letter-spacing: 1px;
+/*	padding-left: 50vw;*/
+}
+
+.heartwatch-bg {
+	background-image: url("../images/heartwatch-2.jpeg");
+	opacity: 0.70;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.heartwatch .heartwatch-information {
+	position: absolute;
+	right: 0;
+	width: 60vw;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.80);
+	top: 0;
+	text-align: center;
+}
+
+.row {
+	text-align: center;
+}
+
+/* PARTNER WITH US */
+.partner-with-us {
+	height: 100vh;
+}
+
+#partner-with-us-header {
+	letter-spacing: 1px;
+}
+
+.partner-with-us-information {
+	text-align: center;
+	padding-top: 2%;
+	margin: 0 20%;
+}
+
+/* FOOTER */
+.footer {
+	background-color: #8A8A8A;
+	text-align: center;
+}

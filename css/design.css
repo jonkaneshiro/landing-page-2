@@ -1,0 +1,127 @@
+body {
+	font-family: 'Optima' !important;
+}
+.testBorder {
+	border: 2px solid blue;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.video-bg {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.video-bg video {
+	z-index: -100;
+	filter: grayscale(50%);
+}
+
+.video-bg .logo {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	display: none;
+	top: 0;
+	padding-top: 8vw;
+}
+
+.video-bg .logo h1 {
+	padding-bottom: 100px;
+}
+
+.video-bg .logo a {
+	letter-spacing: 0.8px;
+	padding: 10px 20px 10px 20px;
+	margin: 100px 50px 100px 50px;
+	border: 2px solid black;
+	border-radius: 4px;
+	text-decoration: none;
+	color: black;
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.video-bg .logo a:hover {
+	background-color: black;
+	color: white;
+}
+
+#people {
+	width: 675px;
+	display: inline-block;
+	text-align: left;
+}
+
+/* MISSION CONTENT */
+
+.content {
+	height: 80vh;
+	width: 100vw;
+	color: black;
+}
+
+.content .content-bg {
+    background-image: url("../images/children-swinging.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    background-attachment: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    z-index: -100; 
+    filter: grayscale(40%);
+}
+
+#content-header {
+}
+
+.content .content-information {
+	height: 100%;
+	width: 50%;
+	padding-top: 30px;
+	padding-left: 30px;
+	background-color: rgba(255, 255, 255, 0.80);
+}
+
+/* HEART WATCH */
+.heart-watch {
+	height: 80vh;
+	width: 100vw;
+}
+
+.heart-watch .heart-watch-bg {
+    background-image: url("../images/heartwatch-2.jpeg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    background-attachment: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    z-index: -100; 
+    filter: grayscale(40%);	
+}
+
+.heart-watch .heart-watch-information {
+	height: 100%;
+	width: 50%;
+	right: 0;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.80);
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+/* EXTRA */
+.extra {
+	width: 100vw;
+	height: 100vh;
+}
