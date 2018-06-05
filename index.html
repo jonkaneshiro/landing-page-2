@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>LIVMOR - Coming soon - Summer 2018</title>
 	    <!-- Boostrap -->
 	    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	    <!-- LIVMOR Customs -->
 	    <link rel="stylesheet" type="text/css" href="css/design.css">
 	    <!-- Font Awesome -->
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	    <link href="static/fontawesome/fontawesome-all.css" rel="stylesheet">
 	    <!-- jQuery CDN -->
 	    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	    <!-- Viewport Constraints -->
@@ -17,19 +18,88 @@
 	</head>
 	<body>
 		<!-- %%%%% %%%%% VIDEO - FRONT PAGE %%%%% %%%%% -->
-		<div class="video-bg">
-			<video autoplay muted loop id="video" control preload>
-					<source src="videos/hifamily.mp4" type="video/mp4">
-			</video>
-			<div class="logo" align="center">
+		<div class="main">
+			<div class="main-bg">
+			</div>
+			<div class="logo">
 				<img src="LIVMOR_Logo.png">
-				<h1>Empowering <span id="people"><span style="color: #1694F7">patients</span> to take control of their health</span></h1>
+				<h1>On a mission to further prevent, detect and manage chronic conditions, in real-time and remotely.</h1>
+				<h1>We empower <span id="people"><span style="color: #1694F7">patients</span> to take control of their health</span></h1>
 				<a href="#partner">PARTNER WITH US</a>
 				<a href="#learn-more">LEARN MORE</a>
 			</div>
 		</div>
+		<div class="content">
+			<div class="content-information">
+				<h1>Remote Patient Monitoring System</h1>
+				<h4>For patients, providers, physicians and families.</h2>
+				<p>Founded by a team of experienced medical device, signal processing, and electrical engineers, LIVMOR has developed a secure, continuous and integrated remote patient monitoring system that allows physicians to enhance their quality of care and ensure patient peace of mind.</p>
+				<p>We believe that a person's health is more than just the condition or disease, and is often times a response to an inbalance from multiple stressors.  With this approach, we have engineered our system to view the whole human, as opposed to the disease, in order to provide physicians and caregivers the crucial information needed to make more definitive actions.</p>
+				<p>Our remote patient monitoring platform seamlessly integrates and continually transmits cardiorespiratory, weight, blood pressure and and blood glucose information through FDA-approved or clinically-validated devices.  The center of LIVMOR's remote patient monitoring system is our Heart Watch wearable, which has been clinically-validated to continuously measure heart rate and heart rate variability, to accurately quantify and assess stress, recovery, cardiorespiratory fitness (VO2max) and irregular heart rhythms.</p>
+				<p>Patient information is securely and wirelessly transmitted, in real-time, to the patient's physician, caregiver and/or family.  Through a higher means of communication and monitoring, physicians are now able to create more personalized care plans, provide continuity of care, reduce healthcare costs, and be there when their patients need them most.</p>
+			</div>
+		</div>
+		<div class="heartwatch">
+			<h1>Introducing the Heart Watch</h1>
+			<h4>Stress. Recovery. Arrythmias. Sleep Quality. Cardiorespiratory Fitness.</h4>
+			<div class="heartwatch-information">
+				<div class="features-row-1">
+					<div class="feature">
+						<i class="fal fa-users fa-4x"></i>
+						<br>
+						Clinically Validated and Patent-Pending
+					</div>
+					<div class="feature">
+						<i class="fal fa-heartbeat fa-4x"></i>
+						<br>
+						Continuous Monitoring
+					</div>
+					<div class="feature">
+						<i class="fal fa-lock-alt fa-4x"></i>
+						<br>
+						Secure and HIPAA Compliant
+					</div>
+				</div>
+				<div class="features-row-2">
+					<div class="feature">
+						<i class="fal fa-wifi fa-4x"></i>
+						<br>
+						WiFi-enabled and compatible with iOS/Android
+					</div>
+					<div class="feature">
+						<i class="fal fa-chart-bar fa-4x"></i>
+						<br>
+						Real-time analytics of information
+					</div>
+					<div class="feature">
+						<i class="fal fa-id-card-alt fa-4x"></i>
+						<br>
+						Interoperable with EHRs
+					</div>
+				</div>
+				<div class="features-row-3">
+					<div class="feature">
+						<i class="fal fa-user-md fa-4x"></i>
+						<br>
+						IEC 60601 Safety Standards Approved
+					</div>
+					<div class="feature">
+						<i class="fal fa-cloud-upload fa-4x"></i>
+						<br>
+						Compatible with the Cloud
+					</div>
+					<div class="feature">
+						<i class="fal fa-glasses fa-4x"></i>
+						<br>
+						Easy to use
+					</div>
+				</div>
+			</div> 
+			<div class="heartwatch-graphic">
+			</div>
+		</div>
 		<!-- %%%%% %%%%% MISSION // SYSTEM %%%%% %%%%% -->
-		<div class="content" id="learn-more">
+<!-- 		<div class="content" id="learn-more">
 			<div class="content-bg">
 				<div class="content-information">
 					<h1 id="content-header">Live your best life.</h1>
@@ -46,8 +116,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="extra">
+		<div class="container hw">
+			
 		</div>
+		<div class="extra">
+		</div> -->
 		<script type="text/javascript" src="js/indexFinal.js"></script>
 	</body>
 </html>

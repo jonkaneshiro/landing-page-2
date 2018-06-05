@@ -1,127 +1,256 @@
 body {
 	font-family: 'Optima' !important;
+	background-color: #E1E1E1;
 }
 .testBorder {
 	border: 2px solid blue;
 }
 
-.container-fluid {
-	padding: 0;
+@media (max-width: 1440px) {
+
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	/* Cover page */
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	.container-fluid {
+		padding: 0;
+	}
+
+	.main {
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.main-bg {
+		background-image: url("../images/family-mountains2.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: bottom;
+	    height: 100%;
+	    z-index: -100;
+	    /*filter: brightness(1.25);*/
+	    filter: opacity(0.8);
+	    filter: grayscale(20%);
+	}
+
+	.main .logo {
+		background-color: rgba(255, 255, 255, 0.6);
+		position: absolute;
+		z-index: 100;
+		width: 70%;
+		display: none;
+		top: 0;
+		border-radius: 7px;
+		margin-top: 80px;
+		margin-left: 50px;
+		padding-top: 50px;
+		padding-left: 50px;
+		height: 60%;
+		overflow: hidden;
+		border: 1px solid black;
+	}
+
+	.main .logo img {
+		width: 60%;
+		min-width: 50%;
+	}
+	.main .logo h1 {
+		font-size: 2rem;
+		padding-top: 20px;
+		padding-bottom: 25px;
+	}
+
+
+	.main .logo a {
+		letter-spacing: 0.8px;
+		padding: 10px 20px 10px 20px;
+		border: 2px solid black;
+		border-radius: 4px;
+		text-decoration: none;
+		color: black;
+		-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+	    transition: all 1s;
+	    background-color: rgba(255, 255, 255, 0.3);
+	 	margin-right: 60px;
+	}
+
+	.main .logo a:hover {
+		background-color: black;
+		color: white;
+	}
+
+	.main .mission {
+		position: absolute;
+		top: 80vh;
+		background-color: rgba(255, 255, 255, 0.50);
+		margin: 0 125px 0 125px;
+		padding: 10px;
+		border-radius: 2px;
+	}
+
+	#people {
+		width: 600px;
+		display: inline-block;
+		text-align: left;
+	}
+
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	/* Content */
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+	.content .content-information {
+		padding-left: 50px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 50%;
+	}
+
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	/* Content */
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	.heartwatch {
+		width: 100vw;
+		height: 80vh;
+	}
+
+	.heartwatch h1 {
+		text-align: center;
+	}
+
+	.heartwatch h4 {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.heartwatch .heartwatch-information {
+		width: 50%;
+		float: left;
+		padding-left: 50px;
+		height: 100%;
+		padding-right: 20px;
+	}
+
+	.heartwatch .heartwatch-information div {
+		width: 100%;
+		height: 33%;
+		padding-top: 20px;
+	}
+
+	.heartwatch .heartwatch-information div div {
+		width: 33%;
+		height: 100%;
+		float: left;
+		text-align: center;
+	}
+
+	.heartwatch .heartwatch-graphic{
+		background-image: url(../images/heartwatch-reading.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		bottom: 0;
+		overflow: hidden;
+		right: 0;
+		border-radius: 6px;
+		width: 50%;
+		height: 100%;
+	}
+
+	.heartwatch .heartwatch-graphic img {
+		position: absolute;
+		width: 100%;
+	}
+
+
 }
 
-.video-bg {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-}
+@media (max-width: 1280px) {
 
-.video-bg video {
-	z-index: -100;
-	filter: grayscale(50%);
-}
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	/* Cover page */
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	.container-fluid {
+		padding: 0;
+	}
 
-.video-bg .logo {
-	position: absolute;
-	z-index: 100;
-	width: 100%;
-	display: none;
-	top: 0;
-	padding-top: 8vw;
-}
+	.main {
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
 
-.video-bg .logo h1 {
-	padding-bottom: 100px;
-}
+	.main-bg {
+		background-image: url("../images/family-mountains2.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: bottom;
+	    height: 100%;
+	    z-index: -100;
+	    /*filter: brightness(1.25);*/
+	    filter: opacity(0.8);
+	    filter: grayscale(20%);
+	}
 
-.video-bg .logo a {
-	letter-spacing: 0.8px;
-	padding: 10px 20px 10px 20px;
-	margin: 100px 50px 100px 50px;
-	border: 2px solid black;
-	border-radius: 4px;
-	text-decoration: none;
-	color: black;
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
-    background-color: rgba(255, 255, 255, 0.3);
-}
+	.main .logo {
+		background-color: rgba(255, 255, 255, 0.6);
+		position: absolute;
+		z-index: 100;
+		width: 70%;
+		display: none;
+		top: 0;
+		border-radius: 7px;
+		margin-top: 80px;
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-top: 30px;
+		padding-left: 30px;
+		height: 60%;
+		overflow: hidden;
+		border: 1px solid black;
+	}
 
-.video-bg .logo a:hover {
-	background-color: black;
-	color: white;
-}
+	.main .logo img {
+		width: 50%;
+		min-width: 50%;
+	}
+	.main .logo h1 {
+		font-size: 1.7rem;
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
 
-#people {
-	width: 675px;
-	display: inline-block;
-	text-align: left;
-}
 
-/* MISSION CONTENT */
+	.main .logo a {
+		letter-spacing: 0.8px;
+		padding: 10px 20px 10px 20px;
+		border: 2px solid black;
+		border-radius: 4px;
+		text-decoration: none;
+		color: black;
+		-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+	    transition: all 1s;
+	    background-color: rgba(255, 255, 255, 0.3);
+	 	margin-right: 60px;
+	}
 
-.content {
-	height: 80vh;
-	width: 100vw;
-	color: black;
-}
+	.main .logo a:hover {
+		background-color: black;
+		color: white;
+	}
 
-.content .content-bg {
-    background-image: url("../images/children-swinging.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 100%;
-    background-attachment: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .75;
-    z-index: -100; 
-    filter: grayscale(40%);
-}
+	.main .mission {
+		position: absolute;
+		top: 80vh;
+		background-color: rgba(255, 255, 255, 0.50);
+		margin: 0 125px 0 125px;
+		padding: 10px;
+		border-radius: 2px;
+	}
 
-#content-header {
-}
+	#people {
+		width: 600px;
+		display: inline-block;
+		text-align: left;
+	}
 
-.content .content-information {
-	height: 100%;
-	width: 50%;
-	padding-top: 30px;
-	padding-left: 30px;
-	background-color: rgba(255, 255, 255, 0.80);
-}
-
-/* HEART WATCH */
-.heart-watch {
-	height: 80vh;
-	width: 100vw;
-}
-
-.heart-watch .heart-watch-bg {
-    background-image: url("../images/heartwatch-2.jpeg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 100%;
-    background-attachment: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .75;
-    z-index: -100; 
-    filter: grayscale(40%);	
-}
-
-.heart-watch .heart-watch-information {
-	height: 100%;
-	width: 50%;
-	right: 0;
-	position: absolute;
-	background-color: rgba(255, 255, 255, 0.80);
-	padding-left: 30px;
-	padding-top: 30px;
-}
-
-/* EXTRA */
-.extra {
-	width: 100vw;
-	height: 100vh;
 }
