@@ -178,6 +178,13 @@ var chart2 = new Chart(ctx2, {
     data: {
         labels: ["10pm","11pm","12am","1am","2am","3am","4am","5am","6am","7am"],
         datasets: [{
+            label: "Potential Irregularity Detected",
+            type: "line",
+            yAxisID: "A",
+            backgroundColor: 'rgb(255, 173, 69)',
+            cubicInterpolationMode: 'monotone',
+            data: [0,0,0,6,0.2,1,0,0,0,0]
+        } ,{
             label: "Sleep Quality",
             type: "line",
             yAxisID: "A",
