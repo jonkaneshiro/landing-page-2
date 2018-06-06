@@ -167,3 +167,50 @@ var chart = new Chart(ctx, {
     }
   }
 });
+
+// HRV Chart JS and Waypoint JS
+var ctx2 = document.getElementById('sleep-quality').getContext('2d');
+var chart2 = new Chart(ctx2, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ["10pm","11pm","12am","1am","2am","3am","4am","5am","6am","7am"],
+        datasets: [{
+            label: "Sleep Quality",
+            type: "line",
+            yAxisID: "A",
+            data: [30,67,79,83,85,88,68,90,87,40]
+        }, {
+            label: "Stress",
+            yAxisID: 'A',
+            backgroundColor: 'rgb(224, 55, 55)',
+            // borderColor: 'rgb(43, 187, 67)',
+            data: [0,0,0,10,0,0,43,0,0,15] 
+        }, {
+            label: "Recovery",
+            yAxisID: 'A',
+            backgroundColor: 'rgb(14, 209, 47)',
+            // borderColor: 'rgb(43, 187, 67)',
+            data: [30,67,79,80,85,88,0,90,87,40]
+        }]
+    },
+
+    // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [{
+        id: 'A',
+        type: 'linear',
+        position: 'left',
+        ticks: {min: 0, max:100},
+        stacked: true
+      }],
+      xAxes: [{
+        stacked: true
+      }]
+    }
+  }
+});
+

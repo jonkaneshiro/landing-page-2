@@ -116,7 +116,7 @@ h1 {
 		padding-left: 50px;
 		padding-top: 50px;
 		padding-bottom: 50px;
-		width: 50%;
+		width: 45%;
 	}
 	.content .content-graphic {
 		position: absolute;
@@ -185,6 +185,10 @@ h1 {
 		width: 50%;
 		height: 80%;
 		border: 1px solid black;
+	}
+
+	.heartwatch .heartwatch-content {
+
 	}
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* Partners */
@@ -355,7 +359,7 @@ h1 {
 		padding-left: 50px;
 		padding-top: 50px;
 		padding-bottom: 50px;
-		width: 50%;
+		width: 45%;
 	}
 	.content .content-graphic {
 		position: absolute;
