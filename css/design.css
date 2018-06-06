@@ -1,12 +1,18 @@
-body {
+html, body {
 	font-family: 'Optima' !important;
 	background-color: #E1E1E1;
+	box-sizing: border-box;
 }
 .testBorder {
 	border: 2px solid blue;
 }
 
 @media (max-width: 1440px) {
+	html, body {
+	font-family: 'Optima' !important;
+	background-color: #E1E1E1;
+	box-sizing: border-box;
+	}
 
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* Cover page */
@@ -97,6 +103,10 @@ body {
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* Content */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	.content {
+		position: relative;
+		width: 100vw;
+	}
 
 	.content .content-information {
 		padding-left: 50px;
@@ -104,29 +114,40 @@ body {
 		padding-bottom: 50px;
 		width: 50%;
 	}
+	.content .content-graphic {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 90%;
+		text-align: center;
+		font-size: 50px;
+		background-color: #66D7EC;
+	}
 
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	/* Content */
 	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 	.heartwatch {
+		position: relative;
 		width: 100vw;
-		height: 80vh;
+		height: 100vh;
+		background-color: #CDCDCD;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
-	.heartwatch h1 {
-		text-align: center;
-	}
-
-	.heartwatch h4 {
+	.heartwatch .heartwatch-header {
 		text-align: center;
 		padding-bottom: 20px;
+		height: 20%;
 	}
 
 	.heartwatch .heartwatch-information {
 		width: 50%;
 		float: left;
 		padding-left: 50px;
-		height: 100%;
+		height: 80%;
 		padding-right: 20px;
 	}
 
@@ -150,18 +171,48 @@ body {
 		background-size: 100%;
 		bottom: 0;
 		overflow: hidden;
-		right: 0;
 		border-radius: 6px;
 		width: 50%;
-		height: 100%;
+		height: 80%;
+		border: 1px solid black;
+	}
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	/* Partners */
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	.partners {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
 	}
 
-	.heartwatch .heartwatch-graphic img {
+	.partners .partners-header {
+		padding-bottom: 20px;
+	}
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	/* Partners */
+	/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+	.join {
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+	}
+
+	.join .join-bg {
+		background-image: url(../images/family-beach.jpg);
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	height: 100%;
+    	z-index: -100;
+	}
+
+	.join .join-content {
 		position: absolute;
-		width: 100%;
+		top: 20%;
+		left: 12%;
+		z-index: 100;
+		width: 40%;
 	}
-
-
 }
 
 @media (max-width: 1280px) {
