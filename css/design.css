@@ -226,7 +226,7 @@ h1 {
 
 	.join .join-content {
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		left: 12%;
 		z-index: 100;
 		width: 40%;
