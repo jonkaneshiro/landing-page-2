@@ -18,7 +18,8 @@
 	    <!-- Viewport Constraints -->
 <!-- 	   	<link rel="stylesheet" media="screen and (max-width: 1270px)" href="css/null.css">
 	    <link rel="stylesheet" media="screen and (max-height: 590px)" href="css/null.css"> -->
-	    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+	    <!-- Chart JS -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 	</head>
 	<body>
 		<!-- %%%%% %%%%% VIDEO - FRONT PAGE %%%%% %%%%% -->
@@ -35,29 +36,36 @@
 		</div>
 		<div class="content" id="learn-more">
 			<div class="content-information" style="text-align: justify">
-				<h1>Remote Patient Monitoring System</h1>
-				<h4>For patients, providers, physicians and families.</h2>
+				<h1>Remote Patient Monitoring</h1>
+				<h4>For patients, providers, physicians and families.</h4>
+				<hr>
 				<p>Founded by a team of experienced medical device, signal processing, and electrical engineers, LIVMOR has developed a secure and integrated remote patient monitoring system that allows physicians to enhance their quality of care and ensure patient peace of mind.</p>
 				<p>We believe that a person's health is more than just the diagnosed condition or disease, and is often times a response to an inbalance from multiple stressors.  With this approach, we have engineered our system to view the whole human, as opposed to the disease, in order to provide physicians and caregivers crucial information to make justified decisions.</p>
 				<p>Our remote patient monitoring platform seamlessly integrates and continually transmits cardiorespiratory, arrythmia, weight, blood pressure and blood glucose information through FDA-approved or clinically-validated devices.  The heart of LIVMOR's remote patient monitoring system is our flagship Heart Watch wearable, which has been clinically-validated to continuously measure heart rate and heart rate variability, to accurately quantify and assess stress, recovery, cardiorespiratory fitness (VO2max) and irregular heart rhythms.</p>
 				<p>Patient information is securely and wirelessly transmitted, in real-time, to the patient's physician, caregiver and/or family.  Through a higher means of communication and monitoring, physicians are now able to create more personalized care plans, provide continuity of care, reduce healthcare costs, and most importantly, be there when their patients need them most.</p>
 				<p>Take a look to the right on how our system works.</p>
 			</div>
-			<div class="content-graphic">
-				<p>Cool graphic/icon diagram to go here.</p>
+			<div class="content-graphic" >
+				<p>Much cooler graphic/schematic to go here.</p>
+				<img src="images/livmor-system1.png">
 			</div>
+		</div>
+		<div class="container" style="text-align: center; margin-bottom: 50px">
+			<h2>Patient A - Last 12 Month Record of Weight and Blood Pressure</h2>
+			<canvas id="myChart"></canvas>
 		</div>
 		<div class="heartwatch">
 			<div class="heartwatch-header">
 				<h1>Introducing the Heart Watch</h1>
 				<h4>Stress. Recovery. Arrythmias. Sleep Quality. Cardiorespiratory Fitness.</h4>
+				<hr style="width: 50%">
 			</div>
 			<div class="heartwatch-information">
 				<div class="features-row-1">
 					<div class="feature">
 						<i class="fal fa-users fa-4x"></i>
 						<br>
-						Clinically Validated and Patent-Pending
+						Clinically Validated & Patent-Pending
 					</div>
 					<div class="feature">
 						<i class="fal fa-heartbeat fa-4x"></i>
@@ -67,19 +75,19 @@
 					<div class="feature">
 						<i class="fal fa-lock-alt fa-4x"></i>
 						<br>
-						HIPAA Compliant and Secure
+						HIPAA Compliant & Secure
 					</div>
 				</div>
 				<div class="features-row-2">
 					<div class="feature">
 						<i class="fal fa-wifi fa-4x"></i>
 						<br>
-						WiFi-enabled and Compatible with iOS/Android
+						WiFi-enabled, iOS & Android
 					</div>
 					<div class="feature">
 						<i class="fal fa-chart-bar fa-4x"></i>
 						<br>
-						Real-time Analytics
+						Real-time Analytics & Automated Alerts
 					</div>
 					<div class="feature">
 						<i class="fal fa-id-card-alt fa-4x"></i>
@@ -110,7 +118,8 @@
 		</div>
 		<div class="partners">
 			<div class="partners-header">
-				<h1>Our Healthcare and Corporate Partners</h1>
+				<h1>Healthcare and Corporate Partners</h1>
+				<hr style="width: 50%">
 			</div>
 			<div class="container">
 			  <section class="customer-logos slider">
@@ -129,7 +138,7 @@
 			<div class="join-content">
 				<h1>Partner or pilot with us!</h1>
 				<hr>
-				<p>We are always looking for new partnerships or pilots.  If you are interested, please fill out the form on the right as best as you can, so we can provide the most relevant consultation.  Once the form is completed, we will contact you within 24 hours.  Talk to you soon!</p>
+				<p>We are always looking for new partnerships to either pilot or enhance our technology.  If you are interested, please fill out the form on the right as best as you can, so we can craft a tailored and productive conversation.  Once the form is completed, we will contact you within 24 hours.  Talk to you soon!</p>
 			</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>

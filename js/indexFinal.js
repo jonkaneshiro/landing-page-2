@@ -116,3 +116,54 @@ $(document).ready(function(){
 //     });
 // }(jQuery));
 
+// Chart JS and Waypoint JS
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ["Aug '17", "Sep '17", "Oct '17", "Nov '17", "Dec '17", "Jan '18", "Feb '18", "Mar '18", "Apr '18", "May '18", "Jun '18", "Jul '18"],
+        datasets: [{
+            label: "Weight (lbs)",
+            yAxisID: 'A',
+            // backgroundColor: 'rgb(87, 210, 235)',
+            borderColor: 'rgb(46, 154, 254)',
+            data: [198, 200, 203, 205, 203, 199, 197, 190, 186, 185, 183, 183]
+        }, {
+            label: "Systolic (mmHg)",
+            yAxisID: 'B',
+            borderColor: 'rgb(232, 62, 62)',
+            data: [185, 186, 183, 185, 173, 168, 152, 150, 143, 139, 136, 134]
+        }, {
+            label: "Diastolic (mmHg)",
+            yAxisID: "B",
+            borderColor: 'rgb(255, 180, 64)',
+            data: [130, 129, 133, 132, 120, 118, 112, 100, 94, 92, 90, 87]
+        }]
+    },
+
+    // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [{
+        id: 'A',
+        type: 'linear',
+        position: 'left',
+        ticks: {max: 210,
+                fontColor: "rgb(46, 154, 254)"
+        }
+      }, {
+        id: 'B',
+        type: 'linear',
+        position: 'right',
+        ticks: {
+          max: 200,
+          min: 60,
+          fontColor: "rgb(255, 109, 40)"
+        }
+      }]
+    }
+  }
+});
