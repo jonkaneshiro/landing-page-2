@@ -86,7 +86,7 @@ i {
 	.main .logo a {
 		letter-spacing: 0.8px;
 		padding: 10px 20px 10px 20px;
-		border: 2px solid black;
+		border: 1px solid black;
 		border-radius: 4px;
 		text-decoration: none;
 		color: black;
