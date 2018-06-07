@@ -221,3 +221,19 @@ var chart2 = new Chart(ctx2, {
   }
 });
 
+
+// Hover effects on "for"
+$('.for-individual').mouseover(function() {
+  $(this).addClass("for-individual-selected");
+  
+  //get ID of div hovered over
+  var forId = $(this).attr("id")
+  $("." + forId).css("opacity","1");
+
+});
+$('.for-individual').mouseout(function() {
+  $(this).removeClass("for-individual-selected");
+  //get ID of div hovered over
+  var forId = $(this).attr("id")
+  $('.' + forId).css("opacity","0");
+});
